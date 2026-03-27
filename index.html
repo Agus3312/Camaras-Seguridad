@@ -3,10 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SecureVision – Cámaras de Seguridad Profesionales</title>
+  <title>Mini Fletes – Cámaras de Seguridad Profesionales | Zona Norte GBA</title>
+  <meta name="description" content="Instalación profesional de cámaras de seguridad HD y 4K para casas, comercios y depósitos en la zona norte del GBA. Presupuesto gratis. Instalación en 24-48 hs." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://camaras-seguridad-dusky.vercel.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Mini Fletes – Cámaras de Seguridad Profesionales" />
+  <meta property="og:description" content="Instalación de cámaras HD y 4K para casas, comercios y depósitos en la zona norte del GBA. Presupuesto gratis." />
+  <meta property="og:url"         content="https://camaras-seguridad-dusky.vercel.app/" />
+  <meta property="og:locale"      content="es_AR" />
+  <meta name="twitter:card"       content="summary_large_image" />
+
+  <!-- Fuente: no bloqueante -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" /></noscript>
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -14,8 +30,8 @@
   <!-- ═══════════════════ NAVBAR ═══════════════════ -->
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a href="#" class="nav__logo">
-        <span class="nav__logo-text">SecureVision</span>
+      <a href="#inicio" class="nav__logo">
+        <span class="nav__logo-text">Mini Fletes</span>
       </a>
       <nav class="nav__links">
         <a href="#servicios">Servicios</a>
@@ -31,13 +47,13 @@
   </header>
 
   <!-- MOBILE MENU -->
-  <div class="mobile-nav" id="mobileNav">
+  <nav class="mobile-nav" id="mobileNav" aria-label="Menú móvil" aria-hidden="true">
     <a href="#servicios"  class="mobile-nav__link">Servicios</a>
     <a href="#soluciones" class="mobile-nav__link">Soluciones</a>
     <a href="#kits"       class="mobile-nav__link">Kits</a>
     <a href="#trabajos"   class="mobile-nav__link">Trabajos</a>
     <a href="#contacto"   class="mobile-nav__link mobile-nav__link--cta">Pedir presupuesto</a>
-  </div>
+  </nav>
 
   <!-- ═══════════════════ HERO ═══════════════════ -->
   <section class="hero" id="inicio">
@@ -51,7 +67,7 @@
         Instalamos sistemas de videovigilancia HD y 4K para casas, comercios y depósitos en toda la zona norte del GBA.
       </p>
       <div class="hero__actions">
-        <a href="https://wa.me/5491171157353?text=Hola%2C+quiero+un+presupuesto+para+c%C3%A1maras+de+seguridad" class="btn btn--yellow" target="_blank">
+        <a href="https://wa.me/5491171157353?text=Hola%2C+quiero+un+presupuesto+para+c%C3%A1maras+de+seguridad" class="btn btn--yellow" target="_blank" rel="noopener noreferrer">
           Pedir presupuesto gratis
         </a>
         <a href="#kits" class="btn btn--outline">Ver kits →</a>
@@ -195,10 +211,10 @@
         <p class="section__sub">Todos los kits incluyen instalación, cableado y configuración de app. Sin costos ocultos.</p>
       </div>
 
-      <div class="tabs fade-up">
-        <button class="tab tab--active" data-tab="casa">Casa</button>
-        <button class="tab" data-tab="negocio">Negocio</button>
-        <button class="tab" data-tab="deposito">Depósito</button>
+      <div class="tabs fade-up" role="tablist" aria-label="Tipo de propiedad">
+        <button class="tab tab--active" data-tab="casa" role="tab" aria-selected="true"  aria-controls="tab-casa">Casa</button>
+        <button class="tab" data-tab="negocio"          role="tab" aria-selected="false" aria-controls="tab-negocio">Negocio</button>
+        <button class="tab" data-tab="deposito"         role="tab" aria-selected="false" aria-controls="tab-deposito">Depósito</button>
       </div>
 
       <div class="tab-panel tab-panel--active" id="tab-casa">
@@ -215,7 +231,7 @@
               <li>App móvil incluida</li>
               <li>Instalación en 24 hs</li>
             </ul>
-            <a href="https://wa.me/5491171157353?text=Hola%2C+quiero+el+Kit+B%C3%A1sico+para+casa+%284+c%C3%A1maras%29" class="btn btn--outline btn--full" target="_blank">Consultar precio</a>
+            <a href="https://wa.me/5491171157353?text=Hola%2C+quiero+el+Kit+B%C3%A1sico+para+casa+%284+c%C3%A1maras%29" class="btn btn--outline btn--full" target="_blank" rel="noopener noreferrer">Consultar precio</a>
           </div>
           <div class="kit-card kit-card--featured fade-up">
             <div class="kit-card__badge kit-card__badge--yellow">Recomendado</div>
@@ -230,7 +246,7 @@
               <li>App móvil + alertas</li>
               <li>Instalación en 24 hs</li>
             </ul>
-            <a href="https://wa.me/5491171157353?text=Hola%2C+quiero+el+Kit+Est%C3%A1ndar+para+casa+%288+c%C3%A1maras%29" class="btn btn--yellow btn--full" target="_blank">Consultar precio</a>
+            <a href="https://wa.me/5491171157353?text=Hola%2C+quiero+el+Kit+Est%C3%A1ndar+para+casa+%288+c%C3%A1maras%29" class="btn btn--yellow btn--full" target="_blank" rel="noopener noreferrer">Consultar precio</a>
           </div>
           <div class="kit-card fade-up">
             <div class="kit-card__badge">Cobertura total</div>
@@ -245,7 +261,7 @@
               <li>Monitor 27" incluido</li>
               <li>Instalación prioritaria</li>
             </ul>
-            <a href="https://wa.me/5491171157353?text=Hola%2C+quiero+el+Kit+Pro+para+casa+%2812-16+c%C3%A1maras%29" class="btn btn--outline btn--full" target="_blank">Consultar precio</a>
+            <a href="https://wa.me/5491171157353?text=Hola%2C+quiero+el+Kit+Pro+para+casa+%2812-16+c%C3%A1maras%29" class="btn btn--outline btn--full" target="_blank" rel="noopener noreferrer">Consultar precio</a>
           </div>
         </div>
       </div>
@@ -263,7 +279,7 @@
               <li>Grabación 24/7</li>
               <li>Instalación en 24 hs</li>
             </ul>
-            <a href="https://wa.me/5491171157353?text=Hola%2C+quiero+el+Kit+B%C3%A1sico+para+comercio" class="btn btn--outline btn--full" target="_blank">Consultar precio</a>
+            <a href="https://wa.me/5491171157353?text=Hola%2C+quiero+el+Kit+B%C3%A1sico+para+comercio" class="btn btn--outline btn--full" target="_blank" rel="noopener noreferrer">Consultar precio</a>
           </div>
           <div class="kit-card kit-card--featured fade-up">
             <div class="kit-card__badge kit-card__badge--yellow">Recomendado</div>
@@ -278,7 +294,7 @@
               <li>App + alertas</li>
               <li>Instalación en 24 hs</li>
             </ul>
-            <a href="https://wa.me/5491171157353?text=Hola%2C+quiero+el+Kit+Negocio+Pro+%288+c%C3%A1maras%29" class="btn btn--yellow btn--full" target="_blank">Consultar precio</a>
+            <a href="https://wa.me/5491171157353?text=Hola%2C+quiero+el+Kit+Negocio+Pro+%288+c%C3%A1maras%29" class="btn btn--yellow btn--full" target="_blank" rel="noopener noreferrer">Consultar precio</a>
           </div>
           <div class="kit-card fade-up">
             <div class="kit-card__badge">Gran comercio</div>
@@ -291,7 +307,7 @@
               <li>IA detección de personas</li>
               <li>Instalación prioritaria</li>
             </ul>
-            <a href="https://wa.me/5491171157353?text=Hola%2C+quiero+el+Kit+Pro+para+comercio+grande" class="btn btn--outline btn--full" target="_blank">Consultar precio</a>
+            <a href="https://wa.me/5491171157353?text=Hola%2C+quiero+el+Kit+Pro+para+comercio+grande" class="btn btn--outline btn--full" target="_blank" rel="noopener noreferrer">Consultar precio</a>
           </div>
         </div>
       </div>
@@ -309,7 +325,7 @@
               <li>Visión nocturna 40m</li>
               <li>Instalación en 24 hs</li>
             </ul>
-            <a href="https://wa.me/5491171157353?text=Hola%2C+quiero+el+Kit+Est%C3%A1ndar+para+dep%C3%B3sito" class="btn btn--outline btn--full" target="_blank">Consultar precio</a>
+            <a href="https://wa.me/5491171157353?text=Hola%2C+quiero+el+Kit+Est%C3%A1ndar+para+dep%C3%B3sito" class="btn btn--outline btn--full" target="_blank" rel="noopener noreferrer">Consultar precio</a>
           </div>
           <div class="kit-card kit-card--featured fade-up">
             <div class="kit-card__badge kit-card__badge--yellow">Recomendado</div>
@@ -323,7 +339,7 @@
               <li>Monitor 27"</li>
               <li>Instalación en 24 hs</li>
             </ul>
-            <a href="https://wa.me/5491171157353?text=Hola%2C+quiero+el+Kit+Pro+Industrial+%288+c%C3%A1maras%29" class="btn btn--yellow btn--full" target="_blank">Consultar precio</a>
+            <a href="https://wa.me/5491171157353?text=Hola%2C+quiero+el+Kit+Pro+Industrial+%288+c%C3%A1maras%29" class="btn btn--yellow btn--full" target="_blank" rel="noopener noreferrer">Consultar precio</a>
           </div>
           <div class="kit-card fade-up">
             <div class="kit-card__badge">Gran depósito</div>
@@ -336,7 +352,7 @@
               <li>IA detección de movimiento</li>
               <li>Relevamiento sin costo</li>
             </ul>
-            <a href="https://wa.me/5491171157353?text=Hola%2C+necesito+un+sistema+personalizado+para+dep%C3%B3sito" class="btn btn--outline btn--full" target="_blank">Consultar precio</a>
+            <a href="https://wa.me/5491171157353?text=Hola%2C+necesito+un+sistema+personalizado+para+dep%C3%B3sito" class="btn btn--outline btn--full" target="_blank" rel="noopener noreferrer">Consultar precio</a>
           </div>
         </div>
       </div>
@@ -354,7 +370,7 @@
       <div class="simulator fade-up">
         <div class="sim-row">
           <div class="sim-field">
-            <label>¿Qué querés proteger?</label>
+            <label for="sim-tipo">¿Qué querés proteger?</label>
             <select id="sim-tipo">
               <option value="">Seleccioná una opción</option>
               <option value="casa">Casa / Departamento</option>
@@ -363,7 +379,7 @@
             </select>
           </div>
           <div class="sim-field">
-            <label>¿Cuántas cámaras necesitás?</label>
+            <label for="sim-cantidad">¿Cuántas cámaras necesitás?</label>
             <select id="sim-cantidad">
               <option value="">Seleccioná una opción</option>
               <option value="1-4">1 a 4 cámaras</option>
@@ -379,7 +395,7 @@
             <strong id="sim-kit-name"></strong>
             <span id="sim-kit-desc"></span>
           </div>
-          <a href="#" id="sim-wp-btn" class="btn btn--yellow" target="_blank">Pedir este kit</a>
+          <a href="#" id="sim-wp-btn" class="btn btn--yellow" target="_blank" rel="noopener noreferrer">Pedir este kit</a>
         </div>
       </div>
     </div>
@@ -475,7 +491,7 @@
     <div class="cta__inner fade-up">
       <h2>¿Listo para proteger<br />lo que más querés?</h2>
       <p>Pedí tu presupuesto gratis hoy. Respondemos en menos de 1 hora por WhatsApp.</p>
-      <a href="https://wa.me/5491171157353?text=Hola%2C+quiero+un+presupuesto+para+c%C3%A1maras+de+seguridad" class="btn btn--yellow btn--lg" target="_blank">
+      <a href="https://wa.me/5491171157353?text=Hola%2C+quiero+un+presupuesto+para+c%C3%A1maras+de+seguridad" class="btn btn--yellow btn--lg" target="_blank" rel="noopener noreferrer">
         Hablar por WhatsApp ahora
       </a>
     </div>
@@ -485,7 +501,7 @@
   <footer class="footer">
     <div class="footer__inner">
       <div class="footer__brand">
-        <span class="footer__logo-text">SecureVision</span>
+        <span class="footer__logo-text">Mini Fletes</span>
         <p>Instalación profesional de cámaras de seguridad en toda la zona norte del GBA.</p>
       </div>
       <div class="footer__col">
@@ -497,7 +513,7 @@
       </div>
       <div class="footer__col">
         <strong>Contacto</strong>
-        <a href="https://wa.me/5491171157353" target="_blank">WhatsApp</a>
+        <a href="https://wa.me/5491171157353" target="_blank" rel="noopener noreferrer">WhatsApp</a>
         <span>Zona Norte GBA, Argentina</span>
         <span>Lun–Sáb · 8:00–20:00</span>
       </div>
@@ -508,7 +524,7 @@
   </footer>
 
   <!-- BOTÓN WHATSAPP FLOTANTE -->
-  <a class="wp-float" href="https://wa.me/5491171157353?text=Hola%2C+quiero+informaci%C3%B3n+sobre+c%C3%A1maras+de+seguridad" target="_blank" aria-label="WhatsApp">
+  <a class="wp-float" href="https://wa.me/5491171157353?text=Hola%2C+quiero+informaci%C3%B3n+sobre+c%C3%A1maras+de+seguridad" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
     <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
       <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.123 1.534 5.852L0 24l6.335-1.51C8.024 23.458 9.977 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.655-.52-5.17-1.428l-.37-.22-3.76.897.939-3.652-.242-.376C2.536 15.565 2 13.844 2 12 2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>

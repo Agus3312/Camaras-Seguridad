@@ -8,8 +8,9 @@ window.addEventListener('scroll', () => {
 });
 
 burger.addEventListener('click', () => {
+  const isOpen = mobileNav.classList.toggle('open');
   burger.classList.toggle('active');
-  mobileNav.classList.toggle('open');
+  mobileNav.setAttribute('aria-hidden', !isOpen);
 });
 
 // Cerrar menú al hacer click en un link
@@ -25,10 +26,14 @@ document.querySelectorAll('.tab').forEach(tab => {
   tab.addEventListener('click', () => {
     const target = tab.dataset.tab;
 
-    document.querySelectorAll('.tab').forEach(t => t.classList.remove('tab--active'));
+    document.querySelectorAll('.tab').forEach(t => {
+      t.classList.remove('tab--active');
+      t.setAttribute('aria-selected', 'false');
+    });
     document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('tab-panel--active'));
 
     tab.classList.add('tab--active');
+    tab.setAttribute('aria-selected', 'true');
     document.getElementById('tab-' + target).classList.add('tab-panel--active');
 
     // re-trigger fade-up animations in new panel
